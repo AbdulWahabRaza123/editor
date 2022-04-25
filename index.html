@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=he, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="nav1">NotePAD</nav>
+    <nav id="nav2">
+      <select
+        name="font style"
+        id="font_family"
+        onchange="changeFontFamily(event)"
+      >
+        <option value="Font Family">Font Family</option>
+        <option id="Courier_New" value="Courier New">Courier New</option>
+        <option id="Courier" value="Courier">Courier</option>
+        <option id="New_Times_Roman" value="New Times Roman">
+          New Times Roman
+        </option>
+        <option id="Arial" value="Arial">Arial</option>
+      </select>
+      <select name="font size" id="font_size" onchange="changeFontSize(event)">
+        <option id="Font" value="Font">Font Size</option>
+        <option id="one" value="12">12</option>
+        <option id="two" value="14">14</option>
+        <option id="three" value="16">16</option>
+        <option id="four" value="18">18</option>
+      </select>
+      <button id="bold_button" onclick="bold()">B</button>
+      <button id="copy" onclick="Copy()">Copy</button>
+      <button id="save" onclick="Save()">Save</button>
+    </nav>
+    <div id="here">
+      <div id="editor_page" contenteditable="true"></div>
+    </div>
+    <script src="editor.js"></script>
+  </body>
+</html>
